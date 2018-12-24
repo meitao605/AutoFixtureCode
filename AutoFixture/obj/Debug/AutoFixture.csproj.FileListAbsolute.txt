@@ -1,0 +1,15 @@
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\bin\Debug\AutoFixture.exe.config
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\bin\Debug\AutoFixture.exe
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\bin\Debug\AutoFixture.pdb
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\obj\Debug\MainWindow.g.cs
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\obj\Debug\App.g.cs
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\obj\Debug\AutoFixture_MarkupCompile.cache
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\obj\Debug\AutoFixture_MarkupCompile.lref
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\obj\Debug\MainWindow.baml
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\obj\Debug\AutoFixture.g.resources
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\obj\Debug\AutoFixture.Properties.Resources.resources
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\obj\Debug\AutoFixture.csproj.GenerateResource.cache
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\obj\Debug\AutoFixture.csproj.CoreCompileInputs.cache
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\obj\Debug\AutoFixture.exe
+c:\users\tmei\source\repos\AutoFixture\AutoFixture\obj\Debug\AutoFixture.pdb
+C:\Users\tmei\source\repos\AutoFixture\AutoFixture\obj\Debug\AutoFixture.csprojAssemblyReference.cache
