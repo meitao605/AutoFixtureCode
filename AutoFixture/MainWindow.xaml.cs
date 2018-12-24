@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -25,6 +26,11 @@ namespace AutoFixture
 
         private Operator People_ID;
         private DispatcherTimer Get_ID = new DispatcherTimer();
+        private DispatcherTimer Get_Order = new DispatcherTimer();
+        private SerialPort Getid_Com = new SerialPort("COM1", 9600, Parity.None, 8, StopBits.One);
+        private SerialPort Getid_Order = new SerialPort("COM5", 9600, Parity.None, 8, StopBits.One);
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -42,7 +48,16 @@ namespace AutoFixture
             };
             this.Enter_ID.SetBinding(TextBox.TextProperty, PeopleID_Binding);
             Get_ID.Tick += Get_ID_Tick;
-            Get_ID.Interval = TimeSpan.FromSeconds(1);
+            Get_ID.Interval = TimeSpan.FromSeconds(0.1);
+            Get_Order.Tick += Get_Order_Tick;
+            Get_Order.Interval = TimeSpan.FromSeconds(0.1);
+
+            Getid_Com.Open();
+
+        }
+
+        private void Get_Order_Tick(object sender, EventArgs e)
+        {
 
         }
 
@@ -54,8 +69,13 @@ namespace AutoFixture
         /// <param name="e"></param>
         private void Get_ID_Tick(object sender, EventArgs e)
         {
-            People_ID.OperID += "1";
-            //throw new NotImplementedException();
+           string str = "";
+            str = Getid_Com.ReadExisting();
+            if (str.Length>5)
+            {
+                People_ID.OperID = str;
+            }
+
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -84,6 +104,9 @@ namespace AutoFixture
             }
         }
 
-        
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Getid_Com.Close();
+        }
     }
 }
