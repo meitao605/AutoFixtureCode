@@ -92,6 +92,7 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <TextBlock Grid.Row="0" Text="Sensor List" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    
                 </Grid>
             </TabItem>
         </TabControl>
