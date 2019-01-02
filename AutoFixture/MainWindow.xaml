@@ -82,7 +82,17 @@
             </TabItem>
 
             <TabItem TabIndex="2" Visibility="Collapsed">
-                
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Sensor List" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
             </TabItem>
         </TabControl>
   
